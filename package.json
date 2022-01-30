@@ -25,6 +25,7 @@
     "prebuild": "rimraf dist",
     "build": "tsc",
     "test": "jest",
+    "test:ci": "jest --logHeapUsage --maxWorkers=1",
     "lint": "eslint \"{src,tests}/**/*.ts[x]\" --fix",
     "release": "standard-version",
     "release:patch": "npm run release -- --release-as patch",
